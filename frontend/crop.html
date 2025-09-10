@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crop Tops – Arha Fashions</title>
+  <meta name="description" content="Explore trendy crop tops at Arha Fashions. Discover your perfect fit and style today.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .float-heading {
+      animation: float 3s ease-in-out infinite;
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+  </style>
+</head>
+<body class="bg-pink-50 text-gray-800">
+
+  <!-- Navbar -->
+  <header class="flex justify-between items-center px-6 py-4 bg-white shadow-md">
+    <h1 class="text-2xl font-bold text-pink-600">Arha Fashions</h1>
+    <nav class="hidden md:flex space-x-6">
+       <a href="home.html" class="hover:text-pink-600 font-medium">Home</a>
+      <a href="dress.html" class="hover:text-pink-600">Dresses</a>
+      <a href="kurta.html" class="hover:text-pink-600">Kurtis</a>
+      <a href="crop.html" class="hover:text-pink-600">Crop Tops</a>
+      <a href="sarees.html" class="hover:text-pink-600">Sarees</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="text-center py-10 bg-white">
+    <h2 class="text-3xl md:text-4xl font-bold text-pink-600 float-heading">Stylish Crop Tops Collection</h2>
+    <p class="mt-2 text-sm md:text-base">Trendy, chic, and comfy tops for every outing.</p>
+  </section>
+
+  <!-- Crop Tops Grid -->
+  <section class="p-6 sm:p-10">
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+
+      <!-- Product 1 -->
+      <div class="bg-white p-3 rounded-lg shadow hover:shadow-xl transition hover:-translate-y-1 block">
+        <a href="product/productc1.html">
+          <img src="https://assets.myntassets.com/h_200,w_200,c_fill,g_auto/h_1440,q_100,w_1080/v1/assets/images/20736378/2022/11/14/3efcec18-24f6-48a9-ab0e-988539cb239d1668396262857BlinkinWhiteCropTop1.jpg" alt="Crop Top 1" class="rounded-md mb-2 w-full h-[300px] object-cover transform transition-transform duration-300 hover:scale-105" />
+          <h4 class="text-base font-semibold">White Ribbed Crop Top</h4>
+          <p class="text-pink-600">₹899</p>
+        </a>
+<!-- <button onclick="addToCart('crop1', 'White Ribbed Crop Top', 899, 'https://assets.myntassets.com/h_200,w_200,c_fill,g_auto/h_1440,q_100,w_1080/v1/assets/images/20736378/2022/11/14/3efcec18-24f6-48a9-ab0e-988539cb239d1668396262857BlinkinWhiteCropTop1.jpg')" class="mt-2 w-full bg-pink-600 text-white py-2 rounded hover:bg-pink-700">Add to Cart</button>
+ -->
+        <button onclick="addToCart('c1','White Ribbed Crop Top',899,'https://assets.myntassets.com/...')" 
+          class="mt-2 bg-pink-600 text-white px-4 py-2 rounded hover:bg-pink-700 w-full">Add to Cart</button>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="bg-white p-3 rounded-lg shadow hover:shadow-xl transition hover:-translate-y-1 block">
+        <a href="product/productc2.html">
+          <img src="https://images.riverisland.com/is/image/RiverIsland/black-soho-street-shoulder-pad-t-shirt_787941_main?$productImageLarge$" alt="Crop Top 2" class="rounded-md mb-2 w-full h-[300px] object-cover transform transition-transform duration-300 hover:scale-105" />
+          <h4 class="text-base font-semibold">Black Slogan Crop</h4>
+          <p class="text-pink-600">₹749</p>
+        </a>
+<!-- <button onclick="addToCart('crop2', 'Black Slogan Crop', 749, 'https://images.riverisland.com/is/image/RiverIsland/black-soho-street-shoulder-pad-t-shirt_787941_main?$productImageLarge$')" class="mt-2 w-full bg-pink-600 text-white py-2 rounded hover:bg-pink-700">Add to Cart</button> -->
+
+        <button onclick="addToCart('c2','Black Slogan Crop',749,'https://images.riverisland.com/...')" 
+          class="mt-2 bg-pink-600 text-white px-4 py-2 rounded hover:bg-pink-700 w-full">Add to Cart</button>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="bg-white p-3 rounded-lg shadow hover:shadow-xl transition hover:-translate-y-1 block">
+        <a href="product/productc3.html">
+          <img src="https://th.bing.com/th/id/OIP.Fqvu2tZLxKHfbLNt1B-_0gHaJc?rs=1&pid=ImgDetMain&cb=idpwebp2&o=7&rm=3" alt="Crop Top 3" class="rounded-md mb-2 w-full h-[300px] object-cover transform transition-transform duration-300 hover:scale-105" />
+          <h4 class="text-base font-semibold">Peach Puff Sleeve Top</h4>
+          <p class="text-pink-600">₹1,099</p>
+        </a>
+<!-- <button onclick="addToCart('crop3', 'Peach Puff Sleeve Top', 1099, 'https://th.bing.com/th/id/OIP.Fqvu2tZLxKHfbLNt1B-_0gHaJc?rs=1&pid=ImgDetMain&cb=idpwebp2&o=7&rm=3')" class="mt-2 w-full bg-pink-600 text-white py-2 rounded hover:bg-pink-700">Add to Cart</button> -->
+
+        <button onclick="addToCart('c3','Peach Puff Sleeve Top',1099,'https://th.bing.com/...')" 
+          class="mt-2 bg-pink-600 text-white px-4 py-2 rounded hover:bg-pink-700 w-full">Add to Cart</button>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="bg-white p-3 rounded-lg shadow hover:shadow-xl transition hover:-translate-y-1 block">
+        <a href="product/productc4.html">
+          <img src="https://th.bing.com/th/id/OIP.U28eAMnJrePQhTSFSKSSDAHaJQ?rs=1&pid=ImgDetMain&cb=idpwebp2&o=7&rm=3" alt="Crop Top 4" class="rounded-md mb-2 w-full h-[300px] object-cover transform transition-transform duration-300 hover:scale-105" />
+          <h4 class="text-base font-semibold">Denim Crop Top</h4>
+          <p class="text-pink-600">₹1,299</p>
+        </a>
+<!-- <button onclick="addToCart('crop4', 'Denim Crop Top', 1299, 'https://th.bing.com/th/id/OIP.U28eAMnJrePQhTSFSKSSDAHaJQ?rs=1&pid=ImgDetMain&cb=idpwebp2&o=7&rm=3')" class="mt-2 w-full bg-pink-600 text-white py-2 rounded hover:bg-pink-700">Add to Cart</button> -->
+
+        <button onclick="addToCart('c4','Denim Crop Top',1299,'https://th.bing.com/...')" 
+          class="mt-2 bg-pink-600 text-white px-4 py-2 rounded hover:bg-pink-700 w-full">Add to Cart</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-100 text-center py-6 mt-10">
+    <p class="text-sm mb-2">© 2025 Arha Fashions. All rights reserved.</p>
+    <div class="flex justify-center space-x-4 text-pink-600 text-xl">
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+  </footer>
+
+  <!-- Cart Script -->
+  <script src="js/cart.js"></script>
+</body>
+</html>

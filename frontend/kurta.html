@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Arha Fashions – Kurtis Collection</title>
+  <meta name="description" content="Explore beautiful and trendy kurtis from Arha Fashions.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .float {
+      animation: floaty 3s ease-in-out infinite;
+    }
+    @keyframes floaty {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+  </style>
+</head>
+<body class="bg-pink-50 font-sans text-gray-800">
+
+  <!-- Navbar -->
+  <header class="flex justify-between items-center px-6 py-4 bg-white shadow-md sticky top-0 z-50">
+    <h1 class="text-2xl font-bold text-pink-600">Arha Fashions</h1>
+    <nav class="hidden md:flex space-x-6">
+       <a href="home.html" class="hover:text-pink-600 font-medium">Home</a>
+      <a href="dress.html" class="hover:text-pink-600">Dresses</a>
+      <a href="kurta.html" class="hover:text-pink-600">Kurtis</a>
+      <a href="crop.html" class="hover:text-pink-600">Crop Tops</a>
+      <a href="sarees.html" class="hover:text-pink-600">Sarees</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-white py-12 px-6 text-center">
+    <h2 class="text-4xl font-bold text-pink-600 mb-4 float">Explore Elegant Kurtis</h2>
+    <p class="text-lg text-gray-600">From traditional flair to modern comfort – style that speaks you.</p>
+  </section>
+
+  <!-- Kurtis Grid -->
+  <section class="p-8">
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+
+      <!-- Product Card 1 -->
+      <div class="bg-white p-3 rounded-lg shadow hover:shadow-2xl transition hover:scale-105 transform block">
+        <a href="product/productk1.html">
+          <img src="https://5.imimg.com/data5/SELLER/Default/2022/8/NI/DR/AJ/14267355/-84a5927-500x500.jpg" alt="Kurti 1" class="rounded-md mb-2 w-full h-52 object-contain"/>
+          <h4 class="text-base font-semibold">Floral Cotton Kurti</h4>
+          <p class="text-pink-600 font-medium">₹1,199</p>
+        </a>
+<!-- <button onclick="addToCart('kurta1', 'Floral Cotton Kurti', 1199, 'https://5.imimg.com/data5/SELLER/Default/2022/8/NI/DR/AJ/14267355/-84a5927-500x500.jpg')" class="mt-2 w-full bg-pink-600 text-white py-2 rounded hover:bg-pink-700">Add to Cart</button>
+ -->
+        <button onclick="addToCart('k1','Floral Cotton Kurti',1199,'https://5.imimg.com/...')" class="mt-2 bg-pink-600 text-white px-4 py-2 rounded hover:bg-pink-700 w-full">Add to Cart</button>
+      </div>
+
+      <!-- Product Card 2 -->
+      <div class="bg-white p-3 rounded-lg shadow hover:shadow-2xl transition hover:scale-105 transform block">
+        <a href="product/productk2.html">
+          <img src="https://5.imimg.com/data5/SELLER/Default/2022/11/VS/IM/AB/16229426/whatsapp-image-2022-11-06-at-13-12-06-1000x1000.jpeg" alt="Kurti 2" class="rounded-md mb-2 w-full h-52 object-contain"/>
+          <h4 class="text-base font-semibold">Rayon Printed Kurti</h4>
+          <p class="text-pink-600 font-medium">₹999</p>
+        </a>
+<!-- <button onclick="addToCart('kurta2', 'Rayon Printed Kurti', 999, 'https://5.imimg.com/data5/SELLER/Default/2022/11/VS/IM/AB/16229426/whatsapp-image-2022-11-06-at-13-12-06-1000x1000.jpeg')" class="mt-2 w-full bg-pink-600 text-white py-2 rounded hover:bg-pink-700">Add to Cart</button>
+ -->
+        <button onclick="addToCart('k2','Rayon Printed Kurti',999,'https://5.imimg.com/...')" class="mt-2 bg-pink-600 text-white px-4 py-2 rounded hover:bg-pink-700 w-full">Add to Cart</button>
+      </div>
+
+      <!-- Product Card 3 -->
+      <div class="bg-white p-3 rounded-lg shadow hover:shadow-2xl transition hover:scale-105 transform block">
+        <a href="product/productk3.html">
+          <img src="https://cdn.sareeka.com/image/data2019/plain-cotton-casual-kurti-in-peach-103263.jpg" alt="Kurti 3" class="rounded-md mb-2 w-full h-52 object-contain"/>
+          <h4 class="text-base font-semibold">Plain Casual Kurti</h4>
+          <p class="text-pink-600 font-medium">₹849</p>
+        </a>
+<!-- <button onclick="addToCart('kurta3', 'Plain Casual Kurti', 849, 'https://cdn.sareeka.com/image/data2019/plain-cotton-casual-kurti-in-peach-103263.jpg')" class="mt-2 w-full bg-pink-600 text-white py-2 rounded hover:bg-pink-700">Add to Cart</button>
+ -->
+        <button onclick="addToCart('k3','Plain Casual Kurti',849,'https://cdn.sareeka.com/...')" class="mt-2 bg-pink-600 text-white px-4 py-2 rounded hover:bg-pink-700 w-full">Add to Cart</button>
+      </div>
+
+      <!-- Product Card 4 -->
+      <div class="bg-white p-3 rounded-lg shadow hover:shadow-2xl transition hover:scale-105 transform block">
+        <a href="product/productk4.html">
+          <img src="https://th.bing.com/th/id/OIP.zVzVBJYD_ovdxnHC4MUbjwHaI0?rs=1&pid=ImgDetMain&cb=idpwebp2&o=7&rm=3" alt="Kurti 4" class="rounded-md mb-2 w-full h-52 object-contain"/>
+          <h4 class="text-base font-semibold">Indigo Blue Kurti</h4>
+          <p class="text-pink-600 font-medium">₹1,499</p>
+        </a>
+<!-- <button onclick="addToCart('kurta4', 'Indigo Blue Kurti', 1499, 'https://th.bing.com/th/id/OIP.zVzVBJYD_ovdxnHC4MUbjwHaI0?rs=1&pid=ImgDetMain&cb=idpwebp2&o=7&rm=3')" class="mt-2 w-full bg-pink-600 text-white py-2 rounded hover:bg-pink-700">Add to Cart</button> -->
+
+        <button onclick="addToCart('k4','Indigo Blue Kurti',1499,'https://th.bing.com/...')" class="mt-2 bg-pink-600 text-white px-4 py-2 rounded hover:bg-pink-700 w-full">Add to Cart</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-100 text-center py-6 mt-12">
+    <p class="text-sm mb-2">© 2025 Arha Fashions. All rights reserved.</p>
+    <div class="flex justify-center space-x-4 text-pink-600 text-xl">
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+  </footer>
+
+  <!-- Cart Script -->
+  <script src="js/cart.js"></script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dresses - Arha Fashions</title>
+  <meta name="description" content="Elegant dress collection from Arha Fashions. Browse stunning designs perfect for every occasion.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    .animate-float { animation: float 3s ease-in-out infinite; }
+
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fadeInUp { animation: fadeInUp 0.9s ease-out forwards; }
+  </style>
+</head>
+<body class="font-sans text-gray-800 bg-pink-50">
+
+  <!-- Navbar -->
+  <header class="flex justify-between items-center px-6 py-4 bg-white shadow-md">
+    <h1 class="text-2xl font-bold text-pink-600">Arha Fashions</h1>
+    <nav class="hidden md:flex space-x-6">
+      <a href="home.html" class="hover:text-pink-600">Home</a>
+      <a href="dress.html" class="text-pink-600 font-semibold">Dresses</a>
+      <a href="kurta.html" class="hover:text-pink-600">Kurtis</a>
+      <a href="crop.html" class="hover:text-pink-600">Crop Tops</a>
+      <a href="sarees.html" class="hover:text-pink-600">Sarees</a>
+    </nav>
+  </header>
+
+  
+
+  <!-- Floating Heading -->
+   
+  <section class="text-center py-12 bg-white">
+    <h2 class="text-3xl md:text-4xl font-bold text-pink-600 animate-float">
+      Explore Our Stunning Dress Collection
+    </h2>
+    <p class="text-sm mt-2 text-gray-600">From casual to festive, find a look for every occasion.</p>
+  </section>
+
+  <!-- Dress Cards -->
+  <section class="px-6 py-10">
+    <div id="dress-container" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+      <!-- Products will load here dynamically -->
+
+<!--Product-->
+   <div class="bg-white p-3 rounded-lg shadow hover:shadow-2xl transition hover:scale-105 transform block">
+        <a href="product/productd1.html">
+          <img src="https://labeladitihundia.com/cdn/shop/products/Lavanya_Anarkali_Set-1_360x.png?v=1680547009" alt="Kurti 1" class="rounded-md mb-2 w-full h-52 object-contain"/>
+          <h4 class="text-base font-semibold">Red Anarkali</h4>
+          <p class="text-pink-600 font-medium">₹1,799</p>
+        </a>
+        <button onclick="addToCart('k1','Red Anarkali',1,799,'https://labeladitihundia.com/...')" class="mt-2 bg-pink-600 text-white px-4 py-2 rounded hover:bg-pink-700 w-full">Add to Cart</button>
+      </div>
+
+       <div class="bg-white p-3 rounded-lg shadow hover:shadow-2xl transition hover:scale-105 transform block">
+        <a href="product/productd2.html">
+          <img src="https://n.nordstrommedia.com/id/sr3/1e5ead33-a6eb-4865-a295-46df5d3a2dee.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=4" alt="Kurti 2" class="rounded-md mb-2 w-full h-52 object-contain"/>
+          <h4 class="text-base font-semibold">Floral Maxi Dress</h4>
+          <p class="text-pink-600 font-medium">₹2,099</p>
+        </a>
+        <button onclick="addToCart('k2','Floral Maxi Dress',2099,'https://n.nordstrommedia.com/...')" class="mt-2 bg-pink-600 text-white px-4 py-2 rounded hover:bg-pink-700 w-full">Add to Cart</button>
+      </div>
+
+       <div class="bg-white p-3 rounded-lg shadow hover:shadow-2xl transition hover:scale-105 transform block">
+        <a href="product/productd3.html">
+          <img src="https://i.etsystatic.com/25925166/r/il/60ebd6/3550811445/il_fullxfull.3550811445_l22a.jpg" alt="Kurti 3" class="rounded-md mb-2 w-full h-52 object-contain"/>
+          <h4 class="text-base font-semibold">Pastel Ruffle Dress</h4>
+          <p class="text-pink-600 font-medium">₹1,299</p>
+        </a>
+        <button onclick="addToCart('k3','Pastel Ruffle Dress',1299,'https://i.etsystatic.com/...')" class="mt-2 bg-pink-600 text-white px-4 py-2 rounded hover:bg-pink-700 w-full">Add to Cart</button>
+      </div>
+
+       <div class="bg-white p-3 rounded-lg shadow hover:shadow-2xl transition hover:scale-105 transform block">
+        <a href="product/productd4.html">
+          <img src="https://th.bing.com/th/id/OIP.I7HxlTh9p1Gg-x4fzArxeQHaJ_?w=1024&h=1381&rs=1&pid=ImgDetMain&cb=idpwebp2&o=7&rm=3" alt="Kurti 4" class="rounded-md mb-2 w-full h-52 object-contain"/>
+          <h4 class="text-base font-semibold">Boho Style Dress</h4>
+          <p class="text-pink-600 font-medium">₹1599</p>
+        </a>
+        <button onclick="addToCart('k4','Boho Style Dress',1599,'https://th.bing.com/...')" class="mt-2 bg-pink-600 text-white px-4 py-2 rounded hover:bg-pink-700 w-full">Add to Cart</button>
+      </div>
+
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-100 text-center py-6 mt-10">
+    <p class="text-sm mb-2">© 2025 Arha Fashions. All rights reserved.</p>
+    <div class="flex justify-center space-x-4 text-pink-600 text-xl">
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+  </footer>
+
+  <!-- Cart + Product Scripts -->
+  <script src="js/cart.js"></script>
+  <script>
+    const API_BASE = "http://localhost:5000/api";
+
+    async function loadDresses() {
+      try {
+        const res = await fetch(`${API_BASE}/products?category=dress`);
+        const products = await res.json();
+
+        const container = document.getElementById("dress-container");
+        container.innerHTML = "";
+
+        products.forEach(prod => {
+          const card = document.createElement("div");
+          card.className = "bg-white p-3 rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition duration-300 animate-fadeInUp";
+
+          card.innerHTML = `
+            <a href="product/productd${prod._id}.html">
+              <img src="${prod.image}" alt="${prod.name}" class="rounded-lg w-full h-72 object-cover mb-3 transition-transform duration-300 hover:scale-110" />
+              <h4 class="text-lg font-semibold">${prod.name}</h4>
+              <p class="text-pink-600">₹${prod.price}</p>
+            </a>
+            <button onclick="addToCart('${prod._id}')"
+              class="mt-2 bg-pink-600 text-white px-4 py-2 rounded hover:bg-pink-700 w-full">
+              Add to Cart
+            </button>
+          `;
+
+          container.appendChild(card);
+        });
+      } catch (err) {
+        console.error("Error loading products:", err);
+      }
+    }
+
+    loadDresses();
+  </script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arha Fashions – Sarees Collection</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .float-heading {
+      animation: float 3s ease-in-out infinite;
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+  </style>
+</head>
+<body class="bg-pink-50 text-gray-800 font-sans">
+
+  <!-- Navbar -->
+  <header class="flex justify-between items-center px-6 py-4 bg-white shadow-md">
+    <h1 class="text-2xl font-bold text-pink-600">Arha Fashions</h1>
+    <nav class="hidden md:flex space-x-6">
+      <a href="home.html" class="hover:text-pink-600 font-medium">Home</a>
+      <a href="dress.html" class="hover:text-pink-600">Dresses</a>
+      <a href="kurta.html" class="hover:text-pink-600">Kurtis</a>
+      <a href="crop.html" class="hover:text-pink-600">Crop Tops</a>
+      <a href="sarees.html" class="hover:text-pink-600">Sarees</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="px-6 py-10 text-center bg-white float-in">
+    <h2 class="text-4xl font-bold text-pink-600 mb-2">Graceful Saree Collection</h2>
+    <p class="text-lg text-gray-600">Wrap yourself in tradition and elegance with our curated saree styles.</p>
+  </section>
+
+  <!-- Product Grid -->
+  <section class="p-8">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+
+      <!-- Saree 1 -->
+      <div class="bg-white rounded-xl shadow hover:shadow-xl p-4 transform transition-transform hover:scale-105 float-in block">
+        <a href="product/products1.html">
+          <img src="https://assets0.mirraw.com/images/9929651/image_zoom.jpeg?1643897978" alt="Saree 1" class="rounded-md w-full h-64 object-cover mb-3" />
+          <h3 class="text-lg font-semibold">Banarasi Silk Saree</h3>
+          <p class="text-pink-600">₹2,499</p>
+        </a>
+<!-- <button onclick="addToCart('saree1', 'Banarasi Silk Saree', 2499, 'https://assets0.mirraw.com/images/9929651/image_zoom.jpeg?1643897978')" class="mt-2 w-full bg-pink-600 text-white py-2 rounded hover:bg-pink-700">Add to Cart</button> -->
+
+        <button onclick="addToCart('s1','Banarasi Silk Saree',2499,'https://assets0.mirraw.com/...')" class="mt-2 bg-pink-600 text-white px-4 py-2 rounded hover:bg-pink-700 w-full">Add to Cart</button>
+      </div>
+
+      <!-- Saree 2 -->
+      <div class="bg-white rounded-xl shadow hover:shadow-xl p-4 transform transition-transform hover:scale-105 float-in block">
+        <a href="product/products2.html">
+          <img src="https://th.bing.com/th/id/OIP.CCnrk9t-yTsnI4nakXIWpwHaLH?rs=1&pid=ImgDetMain&cb=idpwebp2&o=7&rm=3" alt="Saree 2" class="rounded-md w-full h-64 object-cover mb-3" />
+          <h3 class="text-lg font-semibold">Cotton Printed Saree</h3>
+          <p class="text-pink-600">₹1,299</p>
+        </a>
+<!-- <button onclick="addToCart('saree2', 'Cotton Printed Saree', 1299, 'https://th.bing.com/th/id/OIP.CCnrk9t-yTsnI4nakXIWpwHaLH?rs=1&pid=ImgDetMain&cb=idpwebp2&o=7&rm=3')" class="mt-2 w-full bg-pink-600 text-white py-2 rounded hover:bg-pink-700">Add to Cart</button> -->
+
+        <button onclick="addToCart('s2','Cotton Printed Saree',1299,'https://th.bing.com/...')" class="mt-2 bg-pink-600 text-white px-4 py-2 rounded hover:bg-pink-700 w-full">Add to Cart</button>
+      </div>
+
+      <!-- Saree 3 -->
+      <div class="bg-white rounded-xl shadow hover:shadow-xl p-4 transform transition-transform hover:scale-105 float-in block">
+        <a href="product/products3.html">
+          <img src="https://www.koskii.com/cdn/shop/files/koskii-grey-swarovski-chiffon-designer-saree-saus0034163_grey_1_3.jpg?v=1707384197&width=720" alt="Saree 3" class="rounded-md w-full h-64 object-cover mb-3" />
+          <h3 class="text-lg font-semibold">Georgette Saree</h3>
+          <p class="text-pink-600">₹1,999</p>
+        </a>
+<!-- <button onclick="addToCart('saree3', 'Georgette Saree', 1999, 'https://www.koskii.com/cdn/shop/files/koskii-grey-swarovski-chiffon-designer-saree-saus0034163_grey_1_3.jpg?v=1707384197&width=720')" class="mt-2 w-full bg-pink-600 text-white py-2 rounded hover:bg-pink-700">Add to Cart</button>
+      -->
+        <button onclick="addToCart('s3','Georgette Saree',1999,'https://www.koskii.com/...')" class="mt-2 bg-pink-600 text-white px-4 py-2 rounded hover:bg-pink-700 w-full">Add to Cart</button>
+      </div>
+ 
+      <!-- Saree 4 -->
+      <div class="bg-white rounded-xl shadow hover:shadow-xl p-4 transform transition-transform hover:scale-105 float-in block">
+        <a href="product/products4.html">
+          <img src="https://i.etsystatic.com/17102150/r/il/40b6fc/3726199331/il_1080xN.3726199331_qt0n.jpg" alt="Saree 4" class="rounded-md w-full h-64 object-cover mb-3" />
+          <h3 class="text-lg font-semibold">Kanchipuram Saree</h3>
+          <p class="text-pink-600">₹3,199</p>
+        </a>
+<!-- <button onclick="addToCart('saree4', 'Kanchipuram Saree', 3199, 'https://images.drapemall.com/images/items/Saundaryam-Pink-Kanjivaram-Silk-Saree-With-Amazing-Weaving-All-Over-02_8637617.webp')" class="mt-2 w-full bg-pink-600 text-white py-2 rounded hover:bg-pink-700">Add to Cart</button>
+ -->
+        <button onclick="addToCart('s4','Kanchipuram Saree',3199,'https://images.drapemall.com/...')" class="mt-2 bg-pink-600 text-white px-4 py-2 rounded hover:bg-pink-700 w-full">Add to Cart</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-100 text-center py-6 mt-10">
+    <p class="text-sm mb-2">© 2025 Arha Fashions. All rights reserved.</p>
+    <div class="flex justify-center space-x-4 text-pink-600 text-xl">
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+  </footer>
+
+  <!-- Cart Script -->
+  <script src="js/cart.js"></script>
+</body>
+</html>

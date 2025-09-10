@@ -1,0 +1,57 @@
+<!-- Save as product1.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Red Anarkali – Arha Fashions</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .float-in { animation: floatIn 1.2s ease-out; }
+    @keyframes floatIn {
+      0% { transform: translateY(-20px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+<body class="bg-pink-50 text-gray-800 font-sans">
+  <header class="flex justify-between items-center px-6 py-4 bg-white shadow-md">
+    <h1 class="text-2xl font-bold text-pink-600">Arha Fashions</h1>
+    <nav class="hidden md:flex space-x-6">
+      <a href="index.html" class="hover:text-pink-600">Home</a>
+      <a href="dress.html" class="text-pink-600 font-semibold">Dresses</a>
+    </nav>
+  </header>
+
+  <section class="max-w-6xl mx-auto px-6 py-12 grid md:grid-cols-2 gap-10 bg-white mt-4 rounded-xl shadow float-in">
+    <div>
+      <img src="https://labeladitihundia.com/cdn/shop/products/Lavanya_Anarkali_Set-1_360x.png?v=1680547009"
+           alt="Red Anarkali"
+           class="w-full rounded-xl shadow-lg object-cover" />
+    </div>
+    <div class="space-y-4">
+      <h2 class="text-3xl font-bold text-pink-600">Red Anarkali</h2>
+      <p class="text-lg">Beautiful georgette anarkali with fine detailing, perfect for weddings & parties.</p>
+      <p class="text-2xl font-semibold text-pink-600">₹1,799</p>
+      <div>
+        <label class="block font-semibold mb-1">Size</label>
+        <select class="w-full border border-gray-300 rounded-md px-3 py-2">
+          <option>XS</option><option>S</option><option>M</option><option>L</option><option>XL</option>
+        </select>
+      </div>
+      <div>
+        <label class="block font-semibold mb-1">Quantity</label>
+        <input type="number" value="1" min="1" class="w-24 border border-gray-300 rounded-md px-3 py-2" />
+      </div>
+<div class="flex gap-4 mt-4">
+        <a href="cart/cartd1.html">
+        <button class="bg-pink-600 text-white px-5 py-3 rounded-md hover:bg-pink-700 transition">Add to Cart</button>
+        </a>
+        <button class="border border-pink-600 text-pink-600 px-6 py-3 rounded-md hover:bg-pink-600 hover:text-white">Buy Now</button>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
+
+

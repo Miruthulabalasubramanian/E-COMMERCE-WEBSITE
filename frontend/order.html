@@ -1,0 +1,33 @@
+<script src="js/api.js"></script>
+<script>
+  const form = document.getElementById("order-form");
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const shipping = {
+      name: form.name.value.trim(),
+      address: form.address.value.trim(),
+      city: form.city.value.trim(),
+      postalCode: form.postalCode.value.trim(),
+      phone: form.phone.value.trim()
+    };
+    try {
+      const res = await apiFetch("/orders", {
+        method: "POST",
+        body: JSON.stringify({ shipping })
+      });
+      alert("Order placed! ID: " + res.orderId);
+      window.location.href = "home.html";
+    } catch (e) {
+      alert(e.message);
+    }
+  });
+</script>
+<form id="order-form" class="bg-white p-6 rounded-xl shadow max-w-xl mx-auto space-y-3">
+  <input name="name" class="w-full border rounded px-3 py-2" placeholder="Full Name" required>
+  <input name="address" class="w-full border rounded px-3 py-2" placeholder="Address" required>
+  <input name="city" class="w-full border rounded px-3 py-2" placeholder="City" required>
+  <input name="postalCode" class="w-full border rounded px-3 py-2" placeholder="Postal Code" required>
+  <input name="phone" class="w-full border rounded px-3 py-2" placeholder="Phone" required>
+  <button class="bg-pink-600 text-white px-5 py-3 rounded-md">Place Order</button>
+</form>
+

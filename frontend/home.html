@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arha Fashions – Online Shopping for Women's Clothing</title>
+  <meta name="description" content="Shop stylish and trendy women's clothes online at Arha Fashions. Discover designer dresses, tops, kurtis, and more.">
+  <meta name="keywords" content="Arha Fashions, women's fashion, online shopping, dresses, kurtis, tops, sarees, crop tops">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  
+  <style>
+    .float-in {
+      animation: floatIn 1.2s ease-out;
+    }
+    @keyframes floatIn {
+      0% { transform: translateY(-20px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+    html {
+      scroll-behavior: smooth; /* ✅ Smooth scrolling effect */
+    }
+  </style>
+</head>
+<body class="font-sans text-gray-800 bg-pink-50">
+
+  <!-- Navbar -->
+  <header class="flex justify-between items-center px-6 py-4 bg-white shadow-md">
+    <h1 class="text-2xl font-bold text-pink-600">Arha Fashions</h1>
+    <nav class="hidden md:flex space-x-6">
+      <a href="#" class="hover:text-pink-600 font-medium">Home</a>
+      <a href="dress.html" class="hover:text-pink-600">Dresses</a>
+      <a href="kurta.html" class="hover:text-pink-600">Kurtis</a>
+      <a href="crop.html" class="hover:text-pink-600">Crop Tops</a>
+      <a href="sarees.html" class="hover:text-pink-600">Sarees</a>
+      <a href="cart.html" class="hover:text-pink-600">Cart</a>
+      <a href="login.html" class="hover:text-pink-600">Login</a>
+      <a href="#" class="hover:text-pink-600">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="flex flex-col md:flex-row items-center px-6 py-8 bg-pink-50">
+    <div class="flex-1 space-y-4 float-in">
+      <h2 class="text-4xl md:text-5xl font-bold text-pink-600">Fashion that Empowers</h2>
+      <p class="text-lg">Trendy and elegant women's clothing for every season.</p>
+      <!-- ✅ Updated Shop Now button -->
+      <a href="#shop-section" 
+         class="px-6 py-3 bg-pink-600 text-white rounded-full hover:bg-pink-700 transition inline-block">
+         Shop Now
+      </a>
+    </div>
+    <div class="flex-1 mt-6 md:mt-0 float-in">
+      <img src="./images/image5.jpg" alt="Fashion" class="rounded-xl shadow-lg w-full max-w-md mx-auto object-contain">
+    </div>
+  </section>
+
+  <!-- Featured Products -->
+  <section id="shop-section" class="p-8 bg-white">
+    <h3 class="text-2xl font-semibold mb-6 float-in text-center">Featured Collection</h3>
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+      <div class="bg-white w-full max-w-[220px] mx-auto p-3 rounded-lg shadow hover:shadow-xl transition">
+        <img src="images/image1.jpg" alt="Dress" class="h-50 w-full object-cover rounded-md mb-2 transform hover:scale-105 transition-transform">
+        <h4 class="text-base font-semibold">Elegant Dress</h4>
+        <p class="text-base text-pink-600">₹1,499</p>
+      </div>
+      <div class="bg-white w-full max-w-[220px] mx-auto p-3 rounded-lg shadow hover:shadow-xl transition">
+        <img src="images/image3.jpg" alt="Top" class="h-50 w-full object-cover rounded-md mb-2 transform hover:scale-105 transition-transform">
+        <h4 class="text-base font-semibold">Casual Top</h4>
+        <p class="text-base text-pink-600">₹899</p>
+      </div>
+      <div class="bg-white w-full max-w-[220px] mx-auto p-3 rounded-lg shadow hover:shadow-xl transition">
+        <img src="images/image2.jpg" alt="Kurti" class="h-50 w-full object-cover rounded-md mb-2 transform hover:scale-105 transition-transform">
+        <h4 class="text-base font-semibold">Designer Kurti</h4>
+        <p class="text-base text-pink-600">₹1,199</p>
+      </div>
+      <div class="bg-white w-full max-w-[220px] mx-auto p-3 rounded-lg shadow hover:shadow-xl transition">
+        <img src="images/image4.jpg" alt="Kurti" class="h-50 w-full object-cover rounded-md mb-2 transform hover:scale-105 transition-transform">
+        <h4 class="text-base font-semibold">Soft Mul Kurti</h4>
+        <p class="text-base text-pink-600">₹1,500</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Shop by Category -->
+  <section id="categories" class="bg-white py-10 px-6">
+    <h3 class="text-2xl font-semibold text-center mb-8">Shop by Category</h3>
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-8 max-w-5xl mx-auto">
+      <a href="dress.html" class="text-center flex flex-col items-center transform transition-transform hover:scale-105">
+        <div class="w-28 h-28 rounded-full overflow-hidden shadow-md mb-3">
+          <img src="images/image6.jpg" alt="Dresses" class="w-full h-full object-cover">
+        </div>
+        <p class="font-medium text-base">Dresses</p>
+      </a>
+      <a href="kurta.html" class="text-center flex flex-col items-center transform transition-transform hover:scale-105">
+        <div class="w-28 h-28 rounded-full overflow-hidden shadow-md mb-3">
+          <img src="images/image7.jpg" alt="Kurtis" class="w-full h-full object-cover">
+        </div>
+        <p class="font-medium text-base">Kurtis</p>
+      </a>
+      <a href="crop.html" class="text-center flex flex-col items-center transform transition-transform hover:scale-105">
+        <div class="w-28 h-28 rounded-full overflow-hidden shadow-md mb-3">
+          <img src="images/image8.png" alt="Crop Tops" class="w-full h-full object-cover">
+        </div>
+        <p class="font-medium text-base">Crop Tops</p>
+      </a>
+      <a href="sarees.html" class="text-center flex flex-col items-center transform transition-transform hover:scale-105">
+        <div class="w-28 h-28 rounded-full overflow-hidden shadow-md mb-3">
+          <img src="https://th.bing.com/th/id/OIP.ksKEDeCz9NHhrZSclRxMtgHaJd" alt="Sarees" class="w-full h-full object-cover">
+        </div>
+        <p class="font-medium text-base">Sarees</p>
+      </a>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="bg-pink-50 py-10 px-6">
+    <h3 class="text-2xl font-semibold text-center mb-8">What Our Customers Say</h3>
+    <div class="max-w-4xl mx-auto grid gap-6 md:grid-cols-2">
+      <div class="bg-white p-4 rounded-xl shadow text-sm">
+        <p>"Absolutely love the quality and styles at Arha Fashions. Quick delivery and great service!"</p>
+        <p class="mt-2 font-semibold text-pink-600">– Riya M.</p>
+      </div>
+      <div class="bg-white p-4 rounded-xl shadow text-sm">
+        <p>"The kurtis I ordered are so comfy and stylish! Got many compliments 💖"</p>
+        <p class="mt-2 font-semibold text-pink-600">– Sneha P.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section id="categories" class="bg-white py-10 px-6">
+    <div class="max-w-xl mx-auto text-center">
+      <h3 class="text-xl font-semibold mb-2">Stay in Style</h3>
+      <p class="text-sm mb-4">Subscribe to get exclusive offers and the latest trends straight to your inbox!</p>
+      <form class="flex flex-col sm:flex-row gap-2 justify-center">
+        <input type="email" placeholder="Enter your email" class="border border-gray-300 px-4 py-2 rounded-md w-full sm:w-auto">
+        <button type="submit" class="bg-pink-600 text-white px-4 py-2 rounded-md hover:bg-pink-700">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-100 text-center py-6">
+    <p class="text-sm mb-2">© 2025 Arha Fashions. All rights reserved.</p>
+    <div class="flex justify-center space-x-4 text-pink-600 text-xl">
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+  </footer>
+
+</body>
+</html>

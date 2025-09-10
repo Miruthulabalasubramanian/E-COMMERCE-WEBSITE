@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart – Arha Fashions</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-pink-50 font-sans text-gray-800">
+
+  <!-- Navbar -->
+  <header class="flex justify-between items-center px-6 py-4 bg-white shadow-md">
+    <h1 class="text-2xl font-bold text-pink-600">Arha Fashions</h1>
+    <nav class="hidden md:flex space-x-6">
+      <a href="home.html" class="hover:text-pink-600">Home</a>
+      <a href="dress.html" class="hover:text-pink-600">Dresses</a>
+      <a href="kurta.html" class="hover:text-pink-600">Kurtis</a>
+      <a href="crop.html" class="hover:text-pink-600">Crop Tops</a>
+      <a href="sarees.html" class="hover:text-pink-600">Sarees</a>
+    </nav>
+  </header>
+
+  <!-- Cart Section -->
+  <section class="max-w-5xl mx-auto bg-white rounded-xl shadow p-6 mt-8">
+    <h2 class="text-2xl font-bold text-pink-600 mb-4">Your Cart</h2>
+    <div id="cartItems" class="divide-y"></div>
+
+    <div class="mt-6 flex items-center justify-between">
+      <button id="continueShopping" class="border border-pink-600 text-pink-600 px-4 py-2 rounded-md hover:bg-pink-50">
+        Continue Shopping
+      </button>
+      <div class="text-right">
+        <div class="text-lg">Total: <span id="totalPrice" class="font-semibold">₹0</span></div>
+        <button id="checkoutBtn" class="mt-3 bg-pink-600 text-white px-6 py-2 rounded-lg hover:bg-pink-700">
+          Proceed to Checkout
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/cart.js"></script>
+</body>
+</html>
